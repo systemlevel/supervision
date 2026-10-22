@@ -9,7 +9,7 @@ on:
       python-version:
         required: false
         type: string
-        default: "3.10"
+        default: "3.11"
       link-check:
         required: false
         type: boolean

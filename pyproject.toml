@@ -23,7 +23,7 @@ maintainers = [
 authors = [
   { name = "Roboflow et al.", email = "develop@roboflow.com" },
 ]
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 classifiers = [
   "Development Status :: 5 - Production/Stable",
   "Intended Audience :: Developers",
@@ -33,7 +33,6 @@ classifiers = [
   "Operating System :: Microsoft :: Windows",
   "Operating System :: POSIX :: Linux",
   "Programming Language :: Python :: 3 :: Only",
-  "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
@@ -51,10 +50,10 @@ dependencies = [
   "matplotlib>=3.6",
   "numpy>=1.21.2",
   "opencv-python>=4.5.5.64",
-  "pillow>=9.4",
+  "pillow>=13.0.0",
   "pydeprecate>=0.9,<0.10",
   "pyyaml>=5.3",
-  "requests>=2.26",
+  "requests>=2.33.0",
   "scipy>=1.10",
   "tqdm>=4.62.3"
 ]
@@ -74,9 +73,9 @@ dev = [
   "ipywidgets>=8.1.1",
   "jupytext>=1.16.1",
   "nbconvert>=7.14.2",
-  "notebook>=6.5.3,<8",
+  "notebook>=7.6.3,<8",
   "pre-commit>=3.8",
-  "pytest>=7.2.2,<10",
+  "pytest>=9.0.3,<10",
   "pytest-cov>=4,<8",
   "tox>=4.11.4",
 ]
@@ -103,7 +102,7 @@ package-data.supervision = [ "py.typed" ]
 # exclude = [ "docs*", "tests*", "examples*" ]
 
 [tool.ruff]
-target-version = "py310"
+target-version = "py311"
 line-length = 88
 indent-width = 4
 # Exclude a variety of commonly ignored directories.
@@ -189,7 +188,7 @@ quiet-level = 3
 mypy_path = "src"
 explicit_package_bases = true
 ignore_missing_imports = false
-python_version = "3.10"
+python_version = "3.11"
 strict = true
 overrides = [
   # exclude = [
